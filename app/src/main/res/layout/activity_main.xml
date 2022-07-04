@@ -1,57 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/draw_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:padding="@dimen/indent">
+    android:background="@color/blue"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
 
-    <androidx.constraintlayout.widget.Guideline
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:id="@+id/h1"
-        app:layout_constraintGuide_percent="0.05" />
-    <androidx.constraintlayout.widget.Guideline
+        android:padding="@dimen/indent"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:completionThreshold="1"
+            android:text="@string/tv_search"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/tv_search"
+            app:drawableEndCompat="@drawable/ic_search" />
+
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/ic_location"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/h2"
-        app:layout_constraintGuide_percent="0.2" />
+        android:layout_height="wrap_content" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/v1"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.6" />
-
-    <EditText
-        android:id="@+id/edit_search"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/edit_search"
-        app:layout_constraintBottom_toTopOf="@+id/h2"
-        app:layout_constraintEnd_toStartOf="@+id/v1"
-        app:layout_constraintHorizontal_bias="0.137"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/h1"
-        app:layout_constraintVertical_bias="0.023" />
-
-    <Button
-        android:id="@+id/btn_search"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_search"
-        app:layout_constraintStart_toStartOf="@+id/v1"
-        app:layout_constraintTop_toTopOf="@+id/h1" />
-
-    <TextView
-        android:id="@+id/tv_result"
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@+id/h2"
-        tools:layout_editor_absoluteX="-16dp" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="wrap_content" />
+</LinearLayout>

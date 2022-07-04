@@ -1,5 +1,19 @@
-<resources>
-    <string name="app_name">Test</string>
-    <string name="edit_search">Nhập tên thành phố...</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">My Forecast Weather</string>
+    <string name="tv_search">Tìm kiếm tên thành phố</string>
     <string name="btn_search">Xem thời tiết</string>
+    <string name="tv_detail">Chi tiết hiện tại</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_search" tools:ignore="TypographyEllipsis">Nhập tên thành phố...</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="sunrise_sunset">Thời gian mặt trời mọc và lặn</string>
 </resources>

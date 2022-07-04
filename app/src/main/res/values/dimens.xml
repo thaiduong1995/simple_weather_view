@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="indent">10dp</dimen>
+    <dimen name="tv_search">20sp</dimen>
+    <dimen name="height_underlined">1dp</dimen>
+    <dimen name="margin_underlined">10dp</dimen>
+    <dimen name="tv_temp">70sp</dimen>
+    <dimen name="tv_date">15sp</dimen>
+    <dimen name="tv_detail">20sp</dimen>
+    <dimen name="tv_weather_description">20sp</dimen>
+    <dimen name="liner_layout_1_height">200dp</dimen>
+    <dimen name="liner_layout_2_height">300dp</dimen>
+    <dimen name="padding_detail_img">5dp</dimen>
+    <dimen name="padding_detail_txt">20dp</dimen>
+    <dimen name="padding_img_back">12dp</dimen>
+    <dimen name="edit_search">20sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="width_300">250dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="height_100">80dp</dimen>
+    <dimen name="item_forecast_weather">100dp</dimen>
 </resources>
